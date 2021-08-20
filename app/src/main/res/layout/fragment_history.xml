@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llTitlee"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="History"
+                android:id="@+id/tvTitleHistory"
+                android:textSize="20dp"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnBackHistory"
+                android:background="@drawable/custom_button"
+                android:src="@drawable/round_arrow_back_24"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/llTitlee"
+            android:id="@+id/rclvHistoryWatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

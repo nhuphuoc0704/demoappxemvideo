@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    >
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <ImageButton
+        android:id="@+id/btnBackListVideo"
+        android:background="@drawable/custom_button"
+        android:src="@drawable/round_arrow_back_24"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:textSize="12dp"
+        android:gravity="center"
+        android:text="Back"
+        android:layout_below="@id/btnBackListVideo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:src="@drawable/outline_favorite_24"
+        android:id="@+id/imgLike"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:id="@+id/tvLikeWatchVideo"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imgLike"
+        android:layout_width="50dp"
+        android:layout_height="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        app:cardCornerRadius="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/pv_video"
+            app:resize_mode="fit"
+            app:hide_on_touch="true"
+            app:show_timeout="4000"
+            app:rewind_increment="10000"
+            app:fastforward_increment="10000"
+            app:use_controller="true"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:controller_layout_id="@layout/custom_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </androidx.cardview.widget.CardView>
+<!--    <com.google.android.gms.ads.admanager.AdManagerAdView-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/adBanner">-->
+<!--    </com.google.android.gms.ads.admanager.AdManagerAdView>-->
+
+
+
+
+</RelativeLayout>
+</layout>

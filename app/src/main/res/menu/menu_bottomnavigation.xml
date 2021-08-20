@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="@string/menuhome"
+    android:icon="@drawable/round_home_24"
+    android:id="@+id/action_home"/>
+<item android:title="@string/menusearch"
+    android:icon="@drawable/round_search_24"
+    android:id="@+id/action_search"/>
+
+<item android:title="@string/menufavorite"
+    android:icon="@drawable/outline_favorite_24"
+    android:id="@+id/action_favorite"/>
+<item android:title="@string/menuhistory"
+    android:icon="@drawable/round_history_24"
+    android:id="@+id/action_history"/>
+<item android:title="@string/menuprofile"
+    android:icon="@drawable/round_account_circle_24"
+    android:id="@+id/action_profile"/>
+</menu>
